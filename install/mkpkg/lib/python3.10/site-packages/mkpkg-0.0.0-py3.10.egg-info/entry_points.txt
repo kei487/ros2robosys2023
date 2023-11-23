@@ -1,0 +1,4 @@
+[console_scripts]
+listener = mkpkg.listener:main
+talker = mkpkg.talker:main
+

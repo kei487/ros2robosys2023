@@ -1,0 +1,43 @@
+[1.113s] Invoking command in '/home/keitaro/git_robosys/ros2robosys2023/src/mkpkg': PYTHONPATH=/home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/prefix_override:/home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mkpkg build --build-base /home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/build install --record /home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/install.log --single-version-externally-managed
+[1.369s] running egg_info
+[1.370s] creating ../../build/mkpkg/mkpkg.egg-info
+[1.370s] writing ../../build/mkpkg/mkpkg.egg-info/PKG-INFO
+[1.370s] writing dependency_links to ../../build/mkpkg/mkpkg.egg-info/dependency_links.txt
+[1.370s] writing entry points to ../../build/mkpkg/mkpkg.egg-info/entry_points.txt
+[1.370s] writing requirements to ../../build/mkpkg/mkpkg.egg-info/requires.txt
+[1.370s] writing top-level names to ../../build/mkpkg/mkpkg.egg-info/top_level.txt
+[1.371s] writing manifest file '../../build/mkpkg/mkpkg.egg-info/SOURCES.txt'
+[1.372s] reading manifest file '../../build/mkpkg/mkpkg.egg-info/SOURCES.txt'
+[1.373s] writing manifest file '../../build/mkpkg/mkpkg.egg-info/SOURCES.txt'
+[1.373s] running build
+[1.373s] running build_py
+[1.373s] creating /home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/build
+[1.373s] creating /home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/build/lib
+[1.373s] creating /home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/build/lib/mkpkg
+[1.374s] copying mkpkg/talker.py -> /home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/build/lib/mkpkg
+[1.374s] copying mkpkg/__init__.py -> /home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/build/lib/mkpkg
+[1.374s] copying mkpkg/listener.py -> /home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/build/lib/mkpkg
+[1.374s] running install
+[1.374s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.374s]   warnings.warn(
+[1.374s] running install_lib
+[1.375s] creating /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/python3.10/site-packages/mkpkg
+[1.375s] copying /home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/build/lib/mkpkg/talker.py -> /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/python3.10/site-packages/mkpkg
+[1.375s] copying /home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/build/lib/mkpkg/__init__.py -> /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/python3.10/site-packages/mkpkg
+[1.375s] copying /home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/build/lib/mkpkg/listener.py -> /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/python3.10/site-packages/mkpkg
+[1.376s] byte-compiling /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/python3.10/site-packages/mkpkg/talker.py to talker.cpython-310.pyc
+[1.376s] byte-compiling /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/python3.10/site-packages/mkpkg/__init__.py to __init__.cpython-310.pyc
+[1.376s] byte-compiling /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/python3.10/site-packages/mkpkg/listener.py to listener.cpython-310.pyc
+[1.377s] running install_data
+[1.377s] creating /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/share/ament_index
+[1.377s] creating /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/share/ament_index/resource_index
+[1.377s] creating /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/share/ament_index/resource_index/packages
+[1.378s] copying resource/mkpkg -> /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/share/ament_index/resource_index/packages
+[1.378s] copying package.xml -> /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/share/mkpkg
+[1.378s] running install_egg_info
+[1.379s] Copying ../../build/mkpkg/mkpkg.egg-info to /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/python3.10/site-packages/mkpkg-0.0.0-py3.10.egg-info
+[1.380s] running install_scripts
+[1.401s] Installing listener script to /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/mkpkg
+[1.402s] Installing talker script to /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/mkpkg
+[1.402s] writing list of installed files to '/home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/install.log'
+[1.427s] Invoked command in '/home/keitaro/git_robosys/ros2robosys2023/src/mkpkg' returned '0': PYTHONPATH=/home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/prefix_override:/home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mkpkg build --build-base /home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/build install --record /home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/install.log --single-version-externally-managed

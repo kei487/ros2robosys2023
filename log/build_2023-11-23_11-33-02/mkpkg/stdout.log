@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/mkpkg/mkpkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/mkpkg/mkpkg.egg-info/dependency_links.txt
+writing entry points to ../../build/mkpkg/mkpkg.egg-info/entry_points.txt
+writing requirements to ../../build/mkpkg/mkpkg.egg-info/requires.txt
+writing top-level names to ../../build/mkpkg/mkpkg.egg-info/top_level.txt
+reading manifest file '../../build/mkpkg/mkpkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/mkpkg/mkpkg.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/talk_linsten.launch.py -> /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/share/mkpkg
+running install_egg_info
+removing '/home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/python3.10/site-packages/mkpkg-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/mkpkg/mkpkg.egg-info to /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/python3.10/site-packages/mkpkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing listener script to /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/mkpkg
+Installing talker script to /home/keitaro/git_robosys/ros2robosys2023/install/mkpkg/lib/mkpkg
+writing list of installed files to '/home/keitaro/git_robosys/ros2robosys2023/build/mkpkg/install.log'
