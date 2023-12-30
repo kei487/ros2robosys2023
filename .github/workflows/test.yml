@@ -6,6 +6,11 @@ jobs:
     container: ryuichiueda/ubuntu22.04-ros2:latest #前ページのコンテナを使うという宣言
     steps:
       - uses: actions/checkout@v2    #コンテナのカレントディレクトリにリポジトリを配置
+      
+      - name: Apt update
+        run: |
+          sudo apt update -y
+          
       - name: build and test
         run: |
           rsync -av ./ /root/ros2_ws/src/ros2robosys2023/    # リポジトリの下をros2_ws下にコピー
