@@ -12,9 +12,8 @@ res=0
 dir=~
 [ "$1" != "" ] && dir="$1"   #引数があったら、そちらをホームに変える。
 
-cd $dir/ros2_ws/src
-git clone https://github.com/kei487/joint_msgs.git
-cd .. && colcon build
+cd $dir/ros2_ws
+colcon build
 source install/setup.bash
 timeout 20 ros2 launch ros2robosys2023 example.launch.py > /tmp/ros2robosys2023.log
 
