@@ -7,15 +7,15 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     talker_node = Node(
-             package='ros2rbsys',
+             package='ros2robosys2023',
              executable='talker',
         )
     calculater_node = Node(
-             package='ros2rbsys',
+             package='ros2robosys2023',
              executable='calculater',
         )
     listener_node = Node(
-             package='ros2rbsys',
+             package='ros2robosys2023',
              executable='listener',
              output='screen'
         )
