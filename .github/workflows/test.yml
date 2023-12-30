@@ -9,7 +9,8 @@ jobs:
       - name: build and test
         run: |
           rsync -av ./ /root/ros2_ws/src/ros2robosys2023/    # リポジトリの下をros2_ws下にコピー
-          cd /root/ros2_ws
-          rosdep update
+          cd /root/ros2_ws/src
+          git clone https://github.com/kei487/joint_msgs.git
+          cd .. && rosdep update
           rosdep install -i --from-path src --rosdistro humble -y
           bash -xv ./src/ros2robosys2023/test/test.bash /roo
