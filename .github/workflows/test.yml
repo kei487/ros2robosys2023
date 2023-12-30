@@ -10,4 +10,4 @@ jobs:
         run: |
           rsync -av ./ /root/ros2_ws/src/ros2robosys2023/    # リポジトリの下をros2_ws下にコピー
           cd /root/ros2_ws
-          bash -xv ./src/ros2rbsys2023/test/test.bash /roo
+          bash -xv ./src/ros2robosys2023/test/test.bash /roo
