@@ -13,5 +13,5 @@ jobs:
           git clone https://github.com/kei487/joint_msgs.git
           cd /root/ros2_ws && ls -a /root/ros2_ws/src
           rosdep update
-          rosdep install -i --from-path src --rosdistro humble -y
+          rosdep install -r -y --from-paths --ignore-src ./
           bash -xv ./src/ros2robosys2023/test/test.bash /root
