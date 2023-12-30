@@ -1,5 +1,5 @@
-// Copyright 2023 Keitaro Nakamura
-// SPDX-License-Identifier: Apache 2.0
+// SPDX-FileCopyrightText: 2023 Keitaro Nakamura
+// SPDX-License-Identifier: BSD-3-Clause
 #include <chrono>
 #include <functional>
 #include <memory>
