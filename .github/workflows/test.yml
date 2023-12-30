@@ -14,4 +14,6 @@ jobs:
           cd /root/ros2_ws && ls -a /root/ros2_ws/src
           rosdep update
           rosdep install -r -y --from-paths --ignore-src ./
+          source /opt/ros/humble/setup.bash
+          colcon build --symlink-install
           bash -xv ./src/ros2robosys2023/test/test.bash /root
