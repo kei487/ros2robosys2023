@@ -11,5 +11,4 @@ jobs:
           rsync -av ./ /root/ros2_ws/src/mkpkg/    # リポジトリの下をros2_ws下にコピー
           cd /root/ros2_ws
           rosdep update                                            #14行目のために必要
-          rosdep install -i --from-path src --rosdistro humble -y  #不要だけど念のため
           bash -xv ./src/ros2rbsys2023/test/test.bash /roo
