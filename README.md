@@ -17,7 +17,8 @@
 
 # パッケージ詳細
 ## calculaterノード
-![gazou]
+![node,topic図](https://github.com/kei487/ros2robosys2023/assets/79034190/0ca10c8e-05cf-4074-a900-6ebb07085166)
+
 geometry_msgs/msg/Vector3を先端の目標座標としてサブスクラブし、[joint_msgs/msg/JointAngle](https://github.com/kei487/joint_msgs)を関節角度としてパブリッシュします.
 
 # 使い方
