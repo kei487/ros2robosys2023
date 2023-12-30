@@ -10,5 +10,4 @@ jobs:
         run: |
           rsync -av ./ /root/ros2_ws/src/mkpkg/    # リポジトリの下をros2_ws下にコピー
           cd /root/ros2_ws
-          rosdep update                                            #14行目のために必要
           bash -xv ./src/ros2rbsys2023/test/test.bash /roo
