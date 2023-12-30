@@ -2,11 +2,13 @@
 ![test](https://github.com/kei487/robosys2023/actions/workflows/test.yml/badge.svg)
 
 * [イントロダクション](#イントロダクション)
+* [パッケージ詳細](#パッケージ詳細)
+  * [ノード](#calculaterノード)
 * [使い方](#使い方)
   * [インストール方法](#インストール方法)
   * [実行方法](#コードの実行方法)
 * [要求環境](#要求環境)
-  * [必要なソフトウェア](#必要なソフトウェア)
+  * [バージョン情報](#バージョン情報)
   * [テスト環境](#テスト環境)
 * [ライセンス](#ライセンス)
 
@@ -15,7 +17,8 @@
 
 # パッケージ詳細
 ## calculaterノード
-
+![gazou]
+geometry_msgs/msg/Vector3を先端の目標座標としてサブスクラブし、[joint_msgs/msg/JointAngle](https://github.com/kei487/joint_msgs)を関節角度としてパブリッシュします.
 
 # 使い方
 ## インストール方法
