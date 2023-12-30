@@ -12,7 +12,7 @@ res=0
 dir=~
 [ "$1" != "" ] && dir="$1"   #引数があったら、そちらをホームに変える。
 
-cd $dir/ros2_ws
+cd $dir/ros2_ws && ls -a
 colcon build
 source install/setup.bash
 timeout 20 ros2 launch ros2robosys2023 example.launch.py > /tmp/ros2robosys2023.log
