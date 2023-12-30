@@ -21,19 +21,19 @@ class Calculater : public rclcpp::Node
     {
       subscription_ = this->create_subscription<geometry_msgs::msg::Vector3>(
       "/position", 1, std::bind(&Calculater::topic_callback, this, _1));
-      calculater_ = this->create_publisher<joint_msgs::msg::JointAngle>("/joint_angle", 10);
+      calculating_ = this->create_publisher<joint_msgs::msg::JointAngle>("/joint_angle", 10);
     }
 
   private:
     rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr subscription_;
-    rclcpp::Publisher<joint_msgs::msg::JointAngle>::SharedPtr calculater_;
+    rclcpp::Publisher<joint_msgs::msg::JointAngle>::SharedPtr calculating_;
     void calculate();
     void topic_callback(const geometry_msgs::msg::Vector3 & msg) const
     {
       auto message = joint_msgs::msg::JointAngle();
       calc(message,msg);
-      RCLCPP_INFO(this->get_logger(), "Publishing::[0]: '%lf', [1]: '%lf', [2]: '%lf', [3]: '%lf', [4]: '%lf', [5]: '%lf', [6]: '%lf'", message.joint1, message.joint2, message.joint3, message.joint4, message.joint5, message.joint6, message.joint7);
-      calculater_->publish(message);
+      RCLCPP_INFO(this->get_logger(), "Publishing::[0]: %lf, [1]: %lf, [2]: %lf, [3]: %lf, [4]: %lf, [5]: %lf, [6]: %lf", message.joint1, message.joint2, message.joint3, message.joint4, message.joint5, message.joint6, message.joint7);
+      calculating_->publish(message);
     }
     void calc(joint_msgs::msg::JointAngle & message,const geometry_msgs::msg::Vector3 & msg) const
     { 

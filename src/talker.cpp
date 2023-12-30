@@ -19,7 +19,7 @@ class Talker : public rclcpp::Node
     Talker()
     : Node("tallker"), count_(0)
     {
-      talker_ = this->create_publisher<geometry_msgs::msg::Vector3>("/position", 1);
+      talking_ = this->create_publisher<geometry_msgs::msg::Vector3>("/position", 1);
       timer_ = this->create_wall_timer(
       500ms, std::bind(&Talker::timer_callback, this));
     }
@@ -31,11 +31,11 @@ class Talker : public rclcpp::Node
       message.x = count_++;
       message.y = count_++;
       message.z = count_++;
-      RCLCPP_INFO(this->get_logger(), "Publishing::x: '%lf', y: '%lf', z: '%lf'", message.x, message.y, message.z);
-      talker_->publish(message);
+      RCLCPP_INFO(this->get_logger(), "Publishing::x: %lf, y: %lf, z: %lf", message.x, message.y, message.z);
+      talking_->publish(message);
     }
     rclcpp::TimerBase::SharedPtr timer_;
-    rclcpp::Publisher<geometry_msgs::msg::Vector3>::SharedPtr talker_;
+    rclcpp::Publisher<geometry_msgs::msg::Vector3>::SharedPtr talking_;
     size_t count_;
 };
 
