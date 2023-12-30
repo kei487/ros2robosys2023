@@ -11,7 +11,7 @@ jobs:
           rsync -av ./ /root/ros2_ws/src/ros2robosys2023/    # リポジトリの下をros2_ws下にコピー
           cd /root/ros2_ws/src
           git clone https://github.com/kei487/joint_msgs.git
-          cd /root/ros2_ws && ls -a /root/ros2_ws/src
+          cd /root/ros2_ws
           rosdep update
           rosdep install -r -y --from-paths --ignore-src ./
           source /opt/ros/humble/setup.bash
