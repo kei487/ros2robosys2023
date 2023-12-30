@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(joint_msgs REQUIRED)
 
 add_executable(talker
   src/talker.cpp
@@ -17,12 +18,20 @@ ament_target_dependencies(talker
   rclcpp
   geometry_msgs
 )
+add_executable(calculater
+  src/calculater.cpp
+)
+ament_target_dependencies(calculater
+  rclcpp
+  joint_msgs
+  geometry_msgs
+)
 add_executable(listener
   src/listener.cpp
 )
 ament_target_dependencies(listener
   rclcpp
-  geometry_msgs
+  joint_msgs
 )
 
 install(TARGETS
@@ -30,7 +39,12 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}/
 )
 install(TARGETS
+  calculater
+  DESTINATION lib/${PROJECT_NAME}/
+)
+install(TARGETS
   listener
   DESTINATION lib/${PROJECT_NAME}/
 )
+
 ament_package()
