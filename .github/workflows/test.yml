@@ -10,6 +10,7 @@ jobs:
       - name: Apt update
         run: |
           sudo apt update -y
+          sudo apt -y install ament_cmake rclcpp geometry_msgs launch_ros ament_lint_auto ament_lint_common rosidl_default_generators rosidl_default_runtime rosidl_interface_packages
           
       - name: build and test
         run: |
@@ -17,7 +18,6 @@ jobs:
           cd /root/ros2_ws/src
           git clone https://github.com/kei487/joint_msgs.git
           cd /root/ros2_ws
-          apt install ament_cmake rclcpp geometry_msgs launch_ros ament_lint_auto ament_lint_common rosidl_default_generators rosidl_default_runtime rosidl_interface_packages
           source /opt/ros/humble/setup.bash
           colcon build
           bash -xv ./src/ros2robosys2023/test/test.bash /root
