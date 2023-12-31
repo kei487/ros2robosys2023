@@ -13,7 +13,6 @@ jobs:
           cd /root/ros2_ws/src
           git clone https://github.com/kei487/joint_msgs.git
           cd /root/ros2_ws
-          source /opt/ros/humble/setup.bash
           sudo apt update -y
           sudo apt -y install ament_cmake rclcpp geometry_msgs launch_ros ament_lint_auto ament_lint_common rosidl_default_generators rosidl_default_runtime rosidl_interface_packages
           colcon build
