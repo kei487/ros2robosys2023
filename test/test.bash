@@ -8,7 +8,7 @@ dir=~
 
 cd $dir/ros2_ws
 colcon build
-source install/setup.bash
+source $dir/.bashrc
 timeout 10 ros2 launch ros2robosys2023 example.launch.xml > /tmp/ros2robosys2023.log
 
 cat /tmp/ros2robosys2023.log |
