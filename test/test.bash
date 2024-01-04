@@ -14,7 +14,7 @@ dir=~
 
 cd $dir/ros2_ws
 source install/setup.bash
-timeout 20 ros2 launch ros2robosys2023 example.launch.py > /tmp/ros2robosys2023.log
+timeout 10 ros2 launch ros2robosys2023 test.launch.py > /tmp/ros2robosys2023.log
 
-cat /tmp/ros2robosys2023.log | grep 'Subscripted' || ng
+cat /tmp/ros2robosys2023.log | grep 'Listen: 10' || ng
 exit $res

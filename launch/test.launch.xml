@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="ros2robosys2023" exec="talker"/>
+  <node pkg="ros2robosys2023" exec="listener" output="screen"/>
+</launch>
