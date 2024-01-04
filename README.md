@@ -1,7 +1,6 @@
 # Calculate Inverse Kinematics for 7 DOF Manipulator
-![test](https://github.com/kei487/ros2robosys2023/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/kei487/ros2robosys2023/tree/submission/actions/workflows/test.yml/badge.svg)
 
-* [イントロダクション](#イントロダクション)
 * [パッケージ詳細](#パッケージ詳細)
   * [ノード](#calculaterノード)
 * [使い方](#使い方)
@@ -12,14 +11,11 @@
   * [テスト環境](#テスト環境)
 * [ライセンス](#ライセンス)
 
-# イントロダクション
-  このパッケージは7自由度マニピュレータの逆運動学解を計算するROS 2パッケージです.
 
 # パッケージ詳細
-## calculaterノード
-![node,topic図](https://github.com/kei487/ros2robosys2023/assets/79034190/0ca10c8e-05cf-4074-a900-6ebb07085166)
+## topic:countup
+![node,topic図]()
 
-geometry_msgs/msg/Vector3を先端の目標座標としてサブスクラブし、[joint_msgs/msg/JointAngle](https://github.com/kei487/joint_msgs)を関節角度としてパブリッシュします.
 
 # 使い方
 ## インストール方法
@@ -34,7 +30,7 @@ $ source install/setup.bash
  launchファイルで実行を確認することができます.
 * 実行例
 ```
-$ ros2 launch ros2robosys2023 example.launch.py 
+$ ros2 launch ros2robosys2023 example.launch.xml 
 ```
 
 # 要求環境
