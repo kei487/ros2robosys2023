@@ -13,6 +13,8 @@ jobs:
           cd /root/ros2_ws/src
           git clone https://github.com/kei487/joint_msgs.git
           cd /root/ros2_ws
+          sudo apt-get udpate
+          sudo apt-get -y install cmake
           rosdep update
           rosdep install -i --from-path src --rosdistro humble -y
           bash -xv ./src/ros2robosys2023/test/test.bash /root
