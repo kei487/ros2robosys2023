@@ -1,5 +1,5 @@
 # Calculate Inverse Kinematics for 7 DOF Manipulator
-![test](https://github.com/kei487/ros2robosys2023/tree/submission/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/kei487/ros2robosys2023/actions/workflows/test.yml/badge.svg)
 
 * [パッケージ詳細](#パッケージ詳細)
   * [ノード](#calculaterノード)
