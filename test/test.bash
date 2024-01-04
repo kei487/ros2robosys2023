@@ -11,4 +11,4 @@ source install/setup.bash
 timeout 10 ros2 launch ros2robosys2023 test.launch.py > /tmp/ros2robosys2023.log
 
 cat /tmp/ros2robosys2023.log |
-grep 'Listen: 10' || ng
+grep 'Listen: 10' 
