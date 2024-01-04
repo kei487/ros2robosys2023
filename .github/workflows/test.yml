@@ -12,7 +12,7 @@ jobs:
           rsync -av ./ /root/ros2_ws/src/ros2robosys2023/    # リポジトリの下をros2_ws下にコピー
           cd /root/ros2_ws
           rosdep update
-          rosdep install -r -y --from-paths --ignore-src ./
+          rosdep install -i --from-path src --rosdistro humble -y
           sudo apt-get -y install launch_ros
           colcon build
           bash -xv ./src/ros2robosys2023/test/test.bash /root
